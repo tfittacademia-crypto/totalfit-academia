@@ -223,7 +223,8 @@ function dbUpd(t,id,b){
 function dbDel(t,id){
   return fetch(apiUrl(t)+"?id=eq."+id,{method:"DELETE",headers:H}).then(function(r){return r.ok;}).catch(function(){return false;});
 }
-
+function setFiltroUnidProd(u){filtroUnidProd=u;buscaProd="";render();}
+window.setFiltroUnidProd=setFiltroUnidProd;
 function entrar(){
   var v=el("inp-senha").value;
   if(v===SENHA){
