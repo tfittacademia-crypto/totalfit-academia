@@ -7,6 +7,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  function setFiltroUnidProd(u){
+  window.filtroUnidProd=u;
+  window.buscaProd="";
+  if(window.render)window.render();
+}
+window.setFiltroUnidProd=setFiltroUnidProd;
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Poppins',sans-serif;background:#3D004C;color:#fff;min-height:100vh;padding:16px}
