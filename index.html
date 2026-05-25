@@ -174,7 +174,8 @@ input[type=date]::-webkit-calendar-picker-indicator{filter:invert(1)}
   <div id="conteudo"><div class="empty"><i class="ti ti-loader"></i>Carregando...</div></div>
 </div>
 
-<script>
+<script>var filtroUnidProd="Total Fit 1";
+function setFiltroUnidProd(u){filtroUnidProd=u;buscaProd="";render();}
 var SENHA="@Totalfitacademia";
 var SB_URL="https://vdsazfwilwbhjdecvrqb.supabase.co";
 var SB_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZkc2F6ZndpbHdiaGpkZWN2cnFiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzkyMjM3NzUsImV4cCI6MjA5NDc5OTc3NX0.A-t2D8RcM_dxd5nEchqNeXpXaPsF0dxl3WpsXGSbn74";
